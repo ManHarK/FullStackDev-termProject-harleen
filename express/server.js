@@ -16,14 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 const gardenRoutes = require("./routes/gardenRoutes");
 app.use("/api/v1/gardens", gardenRoutes);
 
-
-// Serve React app for any other route
-app.get('*', (req, res) => {
+// Serve React app for any other route 
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
-  //console.log(`Server is running on port http://localhost:${port}`);
-  console.log(`Server is running on port ${port}`)
+  console.log(`Server is running on port ${port}`);
 });
-
