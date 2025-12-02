@@ -1,0 +1,23 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "build": "npm install",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0 <23.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

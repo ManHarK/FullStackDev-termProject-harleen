@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f7f7f7;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.controls select,
+.controls input,
+.controls button {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.map-container {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.garden-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.garden-card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.garden-card h3 {
+  margin: 4px 0 8px 0;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.garden-form {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+}
+
+.garden-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.garden-form .form-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.garden-form .form-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+.garden-form input {
+  width: 100%;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+
+
+/* Search bar input */
+.controls input[type="text"] {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.controls input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50; 
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* Select dropdown */
+.controls select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.controls select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: black;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* GardenForm text boxes */
+.garden-form input {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+  transition: border-color 0.3s;
+}
+
+.garden-form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+.garden-form .form-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+
+
+
