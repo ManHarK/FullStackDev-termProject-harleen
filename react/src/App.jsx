@@ -35,18 +35,36 @@ export default function App() {
 
   useEffect(() => { fetchData(); }, []);
 
+  // async function fetchData() {
+  //   setLoading(true);
+  //   setError("");
+  //   try {
+  //     const data = await getGardens();
+  //     setGardens(Array.isArray(data) ? data : []);
+  //   } catch (err) {
+  //     setError("Failed to load gardens: " + (err.message || ""));
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // }
+
   async function fetchData() {
     setLoading(true);
     setError("");
     try {
+      console.log('Fetching data from API...');
       const data = await getGardens();
+      console.log('Received data:', data);
       setGardens(Array.isArray(data) ? data : []);
     } catch (err) {
-      setError("Failed to load gardens: " + (err.message || ""));
+      console.error('Full error details:', err);
+      setError("Failed to load gardens. Please refresh the page. Error: " + err.message);
     } finally {
       setLoading(false);
     }
   }
+
+
 
   const filteredGardens = gardens.filter(g => {
     const name = (g.name || "").toString().toLowerCase();
